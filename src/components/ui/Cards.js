@@ -9,7 +9,7 @@ import {
 } from "@nextui-org/react";
 import Link from "next/link";
 import { FaHeart } from "react-icons/fa6";
-import { RatingComponent } from "./RatingComponent";
+import { FaStar } from "react-icons/fa";
 
 const Cards = () => {
   return (
@@ -30,10 +30,10 @@ const Cards = () => {
       />
       <CardFooter className="absolute custom-card bg-black/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
         <div>
-          <p className="text-white text-tiny">
-            roadies rd-209-c2 cat-eye sunglasses uv400 protection .
+          <p className="text-white text-small">
+            roadies rd-209-c2 cat-eye sunglasses sdfsdf sdas.
           </p>
-          <p className="text-white text-tiny">Get notified.</p>
+          <p className="text-white text-large"> ₹248.00 – ₹7,800.00</p>
         </div>
         <div className="absolute -top-7 right-3 ">
           <FaHeart
@@ -41,7 +41,33 @@ const Cards = () => {
             style={{ fontSize: "40px" }}
           />
         </div>
-        <RatingComponent/>
+        <div>
+          <div className="flex">
+            <FaStar
+              className="cursor-pointer text-white"
+              style={{ fontSize: "18px", color: "#FFA500" }}
+            />
+            <FaStar
+              className="cursor-pointer text-white"
+              style={{ fontSize: "18px", color: "#FFA500" }}
+            />
+            <FaStar
+              className="cursor-pointer text-white"
+              style={{ fontSize: "18px", color: "#FFA500" }}
+            />
+            <FaStar
+              className="cursor-pointer text-white"
+              style={{ fontSize: "18px", color: "#FFA500" }}
+            />
+            <FaStar
+              className="cursor-pointer text-white"
+              style={{ fontSize: "18px", color: "#FFA500" }}
+            />
+          </div>
+          <div className="text-white text-small">
+          ( 6 Reviews )
+          </div>
+        </div>
       </CardFooter>
     </Card>
   );

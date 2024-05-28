@@ -39,7 +39,7 @@ const HeroSlider = () => {
     "https://img1.junaroad.com//assets/images/mobileNotif/img-1716542394142.jpg?crsl_pos=3",
   ];
   return (
-    <section>
+    <section className="pt-2.50 pb-7">
       <div className="container mx-auto p-2" style={{maxWidth:'1000px'}}>
         <Slider {...settings}>
           {images &&
